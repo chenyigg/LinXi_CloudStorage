@@ -1,0 +1,1097 @@
+
+
+【日志时间】：2020-07-11 13:58:07,200  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 14:04:39,957  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 14:55:35,333  【线程ID】：14    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 14:57:48,470  【线程ID】：13    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 14:58:13,285  【线程ID】：11    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware  
+【日志内容】：An unhandled exception has occurred while executing the request. 
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<LxUsers>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at LinXi_Repository.BaseRepository`1.FindAsync(String name) in E:\G3项目\LinXi_CloudStorage\LinXi_DAL\BaseRepository.cs:line 52
+   at LinXi_Service.BaseService`1.FindAsync(String name) in E:\G3项目\LinXi_CloudStorage\LinXi_Service\BaseService.cs:line 45
+   at LinXi_CloudStorageApi.Controllers.LoginController.mysend() in E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\Controllers\LoginController.cs:line 181
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+【日志时间】：2020-07-11 23:04:01,918  【线程ID】：14    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:05:42,828  【线程ID】：32    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:06:08,140  【线程ID】：38    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:07:19,696  【线程ID】：12    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:07:31,054  【线程ID】：13    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:07:31,067  【线程ID】：13    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:07:41,456  【线程ID】：13    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:07:41,460  【线程ID】：13    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:07:42,902  【线程ID】：6    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1438.5876ms - OK 
+
+
+【日志时间】：2020-07-11 23:07:42,906  【线程ID】：6    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1453.0805ms - OK 
+
+
+【日志时间】：2020-07-11 23:08:12,389  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:10:01,861  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:10:48,333  【线程ID】：12    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:11:02,994  【线程ID】：16    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:11:03,005  【线程ID】：16    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:11:08,445  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:11:08,455  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:11:08,477  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:11:08,481  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:11:09,901  【线程ID】：5    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1415.7979ms - OK 
+
+
+【日志时间】：2020-07-11 23:11:09,906  【线程ID】：5    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1431.7641ms - OK 
+
+
+【日志时间】：2020-07-11 23:11:12,283  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:11:23,670  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:11:24,504  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:11:36,327  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:17:00,120  【线程ID】：13    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:17:36,334  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:17:36,347  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:17:41,735  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:17:41,742  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:17:48,754  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:17:48,764  【线程ID】：7    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:17:50,105  【线程ID】：9    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:17:50,114  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:17:50,135  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:17:50,141  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:17:50,506  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:17:50,517  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:17:50,523  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:17:50,529  【线程ID】：4    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:17:51,597  【线程ID】：19    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1451.254ms - OK 
+
+
+【日志时间】：2020-07-11 23:17:51,597  【线程ID】：11    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1063.9947ms - OK 
+
+
+【日志时间】：2020-07-11 23:17:51,608  【线程ID】：11    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1084.428ms - OK 
+
+
+【日志时间】：2020-07-11 23:17:51,610  【线程ID】：19    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1475.0641ms - OK 
+
+
+【日志时间】：2020-07-11 23:17:52,035  【线程ID】：9    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:17:52,048  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:17:52,054  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:17:52,058  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:17:52,128  【线程ID】：11    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 70.41ms - OK 
+
+
+【日志时间】：2020-07-11 23:17:52,132  【线程ID】：11    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 77.8495ms - OK 
+
+
+【日志时间】：2020-07-11 23:17:52,150  【线程ID】：7    
+【日志级别】：WARN   
+【日志对象】：Microsoft.EntityFrameworkCore.Model.Validation  
+【日志内容】：Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. 
+
+
+【日志时间】：2020-07-11 23:17:54,016  【线程ID】：17    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:18:05,753  【线程ID】：17    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:18:06,198  【线程ID】：17    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:18:17,187  【线程ID】：13    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:19:13,715  【线程ID】：10    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:19:20,982  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:21:28,493  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:21:39,855  【线程ID】：8    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:21:39,868  【线程ID】：8    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:21:40,025  【线程ID】：8    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:21:40,029  【线程ID】：8    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:21:41,440  【线程ID】：7    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1406.8221ms - OK 
+
+
+【日志时间】：2020-07-11 23:21:41,445  【线程ID】：7    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1422.253ms - OK 
+
+
+【日志时间】：2020-07-11 23:21:43,775  【线程ID】：8    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:25:57,507  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:26:14,465  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:26:14,479  【线程ID】：7    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:26:14,637  【线程ID】：7    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:26:14,641  【线程ID】：7    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:26:16,074  【线程ID】：17    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1428.9744ms - OK 
+
+
+【日志时间】：2020-07-11 23:26:16,079  【线程ID】：17    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1444.59ms - OK 
+
+
+【日志时间】：2020-07-11 23:26:49,862  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:28:22,767  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:28:25,676  【线程ID】：11    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:32:06,380  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:32:12,163  【线程ID】：14    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:32:12,180  【线程ID】：14    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:32:12,368  【线程ID】：14    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:32:12,373  【线程ID】：14    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:32:13,942  【线程ID】：6    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1564.9836ms - OK 
+
+
+【日志时间】：2020-07-11 23:32:13,947  【线程ID】：6    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1582.1783ms - OK 
+
+
+【日志时间】：2020-07-11 23:33:32,572  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:33:38,857  【线程ID】：11    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() 
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+
+【日志时间】：2020-07-11 23:38:31,413  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:38:41,459  【线程ID】：15    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-11 23:38:41,474  【线程ID】：15    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-11 23:38:41,627  【线程ID】：15    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:38:41,631  【线程ID】：15    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-11 23:38:43,072  【线程ID】：11    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1437.3437ms - OK 
+
+
+【日志时间】：2020-07-11 23:38:43,077  【线程ID】：11    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1452.3897ms - OK 
+
+
+【日志时间】：2020-07-11 23:38:49,801  【线程ID】：7    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+
+
+【日志时间】：2020-07-11 23:40:53,564  【线程ID】：35    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+
+
+【日志时间】：2020-07-11 23:41:03,248  【线程ID】：36    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+
+
+【日志时间】：2020-07-11 23:46:28,885  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:46:48,957  【线程ID】：5    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+
+
+【日志时间】：2020-07-11 23:48:51,187  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:49:02,623  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+
+
+【日志时间】：2020-07-11 23:50:24,553  【线程ID】：14    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:50:35,854  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+
+
+【日志时间】：2020-07-11 23:52:33,862  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-11 23:52:45,334  【线程ID】：4    
+【日志级别】：ERROR  
+【日志对象】：Microsoft.EntityFrameworkCore.Query  
+【日志内容】：An exception occurred while iterating over the results of a query for context type 'LinXi_Model.LinXi_CloudStorageContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext() 
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'LinXi_CloudStorageContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()

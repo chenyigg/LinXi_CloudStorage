@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LinXi_CloudStorageApi</name>
+    </assembly>
+    <members>
+        <member name="T:LinXi_CloudStorageApi.Controllers.AllFileController">
+            <summary>
+            全部文件
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.FileOwn(System.Int32)">
+            <summary>
+            获取文件自身
+            </summary>
+            <param name="LxResourceAccountId">资源账号ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.MyAllFile(System.Int32)">
+            <summary>
+            获取文件子级
+            </summary>
+            <param name="Pid">文件父ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.FileSuper(System.Int32)">
+            <summary>
+            获取文件父级
+            </summary>
+            <param name="Pid">文件父ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.FileDown(System.Int32)">
+            <summary>
+            文件下载
+            </summary>
+            <param name="LxResourceAccountId">资源账户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.FuzzyQuery(System.String)">
+            <summary>
+            模糊查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.ExistMd5(System.String,System.Int32,System.String)">
+            <summary>
+             如果该文件MD5码已存在则无需上传
+             Yes表示已存在，No表示不存在</summary>
+            <param name="md5">文件md5码</param>
+            <param name="pid">文件父目录</param>
+            <param name="fileName">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.UpLoad(System.Int32,System.String)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="pid">父级id</param>
+            <param name="fileName">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.CreateFile(System.Int32)">
+            <summary>
+            新建文件夹
+            </summary>
+            <param name="pid">父级id</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.OverrideName(System.String,System.Int32)">
+            <summary>
+            文件重命名
+            </summary>
+            <param name="LxResourceAccountName">要修改的名字</param>
+            <param name="LxResourceAccountID">资源账户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.DeleteFiles(System.Int32)">
+            <summary>
+            删除文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.AllFileController.DeleteFile(System.Int32,System.Int32)">
+            <summary>
+            删除文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.DocumentController">
+            <summary>
+            文档控制器
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.DocumentController.PreviewDoc(System.Int32)">
+            <summary>
+            预览文本内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.DocumentController.GetAll(System.String)">
+            <summary>
+            获取所有文件
+            </summary>
+            <param name="SearchName">模糊查询</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.LoginController">
+            <summary>
+            登录校验
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.LoginController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.LoginController},LinXi_IService.ILxUsersService,System.IServiceProvider,System.Net.Http.IHttpClientFactory,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            构造函数注入
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="httpClientFactory"></param>
+            <param name=" httpContextAccessor"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.LoginController.CloudLogin(LinXi_Model.DTO.UserDTO)">
+            [ApiExplorerSettings(IgnoreApi = true)] 该特性隐藏Action 在SwaggerUI的显示
+             <summary>
+             登录校验
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.LoginController.ValidCode">
+            <summary>
+            返回验证码,此处保存登录验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.LoginController.mysend(System.Int32)">
+            <summary>
+             测试异步方法
+             </summary>
+             <param name="id">用户id</param>
+             <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.LoginController.GetInfo">
+            <summary>
+            获取token信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.MusicController">
+            <summary>
+            音乐控制器
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.MusicController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.MusicController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            音乐构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.MusicController.PreviewMusic(System.Int32)">
+            <summary>
+            预览音乐流
+            </summary>
+            <param name="LxResourceAccountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.MusicController.GetAll(System.String)">
+            <summary>
+            获取所有文件
+            </summary>
+            <param name="SearchName">模糊查询</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.OtherController">
+            <summary>
+            其他文件
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.OtherController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.OtherController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            其他文件构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.OtherController.GetAll(System.String)">
+            <summary>
+            获取所有文件
+            </summary>
+            <param name="SearchName">模糊查询</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.PictureController">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.PictureController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.PictureController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            图片构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.PictureController.PreviewPic(System.Int32)">
+            <summary>
+            预览图片流
+            </summary>
+            <param name="LxResourceAccountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.PictureController.GetAll(System.String)">
+            <summary>
+            获取所有图片
+            </summary>
+            <param name="SearchName">查询名</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.RecycleController">
+            <summary>
+            回收
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RecycleController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.RecycleController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,LinXi_IService.ILxShareService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            回收构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="ILxShareService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RecycleController.GetRecycleList(System.String)">
+            <summary>
+            获取回收表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RecycleController.CanceRecycle(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            从回收站回收文件
+            </summary>
+            <param name="jsondata">前台传的json，需要键为ArrayID，值为int数组的json</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RecycleController.CanceRecycleFile(System.Int32,System.Int32)">
+            <summary>
+            从回收站回收文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.RegisterController">
+            <summary>
+            注册
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RegisterController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.RegisterController},LinXi_IService.ILxUsersService,System.IServiceProvider,System.Net.Http.IHttpClientFactory)">
+            <summary>
+            构造函数注入
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RegisterController.CreateUser(LinXi_Model.DTO.RegisterDTO)">
+            <summary>
+            注册Post
+            </summary>
+            <param name="User">用户</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RegisterController.HasAccount(System.String)">
+            <summary>
+            判断抢注
+            </summary>
+            <param name="LxUsersLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.RegisterController.SendEmail(System.String)">
+            <summary>
+            发送邮件，此处保存注册验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.ShareController">
+            <summary>
+            文件分享
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.ShareController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,LinXi_IService.ILxShareService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            用户构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="ILxShareService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.GetShareCode(System.Int32,System.String)">
+            <summary>
+            获取分享码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.HasShareLink(System.String)">
+            <summary>
+            判断该链接是否存在
+            </summary>
+            <param name="ShareLink"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.CompareValidCode(System.String,System.String)">
+            <summary>
+            比对提取码
+            </summary>
+            <param name="ShareLink">分享链接</param>
+            <param name="ValidCode">提取码</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.FileOwn(System.Int32)">
+            <summary>
+            分享表获取文件自身
+            </summary>
+            <param name="LxShareId">分享表ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.GetShareList">
+            <summary>
+            获取分享表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.CanceShare(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            取消分享
+            </summary>
+            <param name="jsondata">前台传的json，需要键为ArrayID，值为int数组的json</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.GetAll(System.String)">
+            <summary>
+            获取所有图片
+            </summary>
+            <param name="SearchName">查询名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.FileDown(System.Int32,System.Int32)">
+            <summary>
+            文件下载
+            </summary>
+            <param name="LxShareId">分享表id</param>
+            <param name="LxResourceAccountId">资源账户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.ShareController.GetFileOwnPic(System.Int32)">
+            <summary>
+            获取文件所有者图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.TorrentController">
+            <summary>
+            种子
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.TorrentController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.TorrentController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            种子构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.TorrentController.GetAll(System.String)">
+            <summary>
+            获取所有文件
+            </summary>
+            <param name="SearchName">模糊查询</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.UserController">
+            <summary>
+            获取用户信息
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.UserController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.UserController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,LinXi_IService.ILxShareService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            用户构造函数
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="ILxShareService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.UserController.GetUserFormShare(System.Int32)">
+            <summary>
+            通过分享表id获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.UserController.EditUser(LinXi_Model.DTO.EditUserDTO)">
+            <summary>
+            通过分享表id获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.UserController.GetUserPic">
+            <summary>
+            获取用户头像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.UserController.GetUserInfoByID">
+            <summary>
+            通过id获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Controllers.VideoController">
+            <summary>
+            视频
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.VideoController.#ctor(Microsoft.Extensions.Logging.ILogger{LinXi_CloudStorageApi.Controllers.VideoController},LinXi_IService.ILxUsersService,System.IServiceProvider,LinXi_IService.ILxResourceAccountService,LinXi_IService.ILxResourceService,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            视频构造
+            </summary>
+            <param name="logger"></param>
+            <param name="ILxUsersService"></param>
+            <param name="service"></param>
+            <param name="ILxResourceAccountService"></param>
+            <param name="ILxResourceService"></param>
+            <param name="IMapper"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.VideoController.GetAll(System.String)">
+            <summary>
+            获取所有文件
+            </summary>
+            <param name="SearchName">模糊查询</param>
+            <returns></returns>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Controllers.VideoController.PreviewVideo(System.Int32)">
+            <summary>
+            预览视频流
+            </summary>
+            <param name="LxResourceAccountId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LinXi_CloudStorageApi.Extensions.SwaggerSetup">
+            <summary>
+            Swagger配置
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Extensions.SwaggerSetup.AddMySwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Swagger配置
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="P:LinXi_CloudStorageApi.Startup.Configuration">
+            <summary>
+            配置文件属性
+            </summary>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            将服务添加到DI容器中并做一些配置.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            Autofac组件注册
+            </summary>
+            <param name="containerBuilder"></param>
+        </member>
+        <member name="M:LinXi_CloudStorageApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            配置请求管道
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

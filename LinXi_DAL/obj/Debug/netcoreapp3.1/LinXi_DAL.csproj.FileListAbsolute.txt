@@ -1,0 +1,16 @@
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\obj\Debug\netcoreapp3.1\LinXi_DAL.csprojAssemblyReference.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\obj\Debug\netcoreapp3.1\LinXi_DAL.AssemblyInfoInputs.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\obj\Debug\netcoreapp3.1\LinXi_DAL.AssemblyInfo.cs
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_DAL.deps.json
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_DAL.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_DAL.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_IDAL.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_Model.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_IDAL.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\bin\Debug\netcoreapp3.1\LinXi_Model.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\obj\Debug\netcoreapp3.1\LinXi_DAL.csproj.CopyComplete
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\obj\Debug\netcoreapp3.1\LinXi_DAL.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_DAL\obj\Debug\netcoreapp3.1\LinXi_DAL.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageAPP\bin\Debug\netcoreapp3.1\LinXi_DAL.deps.json
+E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageAPP\bin\Debug\netcoreapp3.1\LinXi_DAL.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageAPP\bin\Debug\netcoreapp3.1\LinXi_DAL.pdb

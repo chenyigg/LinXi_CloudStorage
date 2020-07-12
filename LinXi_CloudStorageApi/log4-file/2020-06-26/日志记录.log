@@ -1,0 +1,132 @@
+
+
+【日志时间】：2020-06-26 12:37:08,708  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 12:37:09,414  【线程ID】：11    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 14:20:21,870  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 14:20:24,557  【线程ID】：7    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 14:36:01,386  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 14:36:02,042  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 14:40:16,756  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 14:40:17,131  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 14:44:30,293  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 14:44:30,681  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 15:51:26,856  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 15:51:29,252  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 16:02:18,797  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 16:02:20,402  【线程ID】：7    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 16:03:41,719  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 16:03:43,393  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 16:08:37,165  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 16:08:37,436  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 16:48:21,470  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 16:48:21,787  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-26 20:47:07,159  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63883 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-06-26 20:47:08,616  【线程ID】：12    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 

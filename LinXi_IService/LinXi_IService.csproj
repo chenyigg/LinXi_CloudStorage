@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LinXi_IDAL\LinXi_IRepository.csproj" />
+    <ProjectReference Include="..\LinXi_Model\LinXi_Model.csproj" />
+  </ItemGroup>
+
+</Project>

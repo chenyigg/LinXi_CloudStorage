@@ -1,0 +1,11 @@
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\bin\Release\netcoreapp3.1\LinXi_Model.deps.json
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\bin\Release\netcoreapp3.1\LinXi_Model.runtimeconfig.json
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\bin\Release\netcoreapp3.1\LinXi_Model.runtimeconfig.dev.json
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\bin\Release\netcoreapp3.1\LinXi_Model.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\bin\Release\netcoreapp3.1\LinXi_Model.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Release\netcoreapp3.1\LinXi_Model.csprojAssemblyReference.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Release\netcoreapp3.1\LinXi_Model.AssemblyInfoInputs.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Release\netcoreapp3.1\LinXi_Model.AssemblyInfo.cs
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Release\netcoreapp3.1\LinXi_Model.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Release\netcoreapp3.1\LinXi_Model.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Release\netcoreapp3.1\LinXi_Model.genruntimeconfig.cache

@@ -1,0 +1,39 @@
+{
+  //"defaultAssembly": "Autofac.Example.Calculator",
+  "components": [
+    {
+      "type": "LinXi_Service.LxUsersService,LinXi_Service",
+      "services": [
+        {
+          "type": "LinXi_IService.ILxUsersService,LinXi_IService"
+        }
+      ],
+      "instanceScope": "per-lifetime-scope",
+      "injectProperties": true
+    },
+    {
+      "type": "LinXi_DAL.LxUsersDAL,LinXi_DAL",
+      "services": [
+        {
+          "type": "LinXi_IDAL.ILxUsersDAL,LinXi_IDAL"
+        }
+      ],
+      "instanceScope": "per-lifetime-scope",
+      "injectProperties": true
+    }
+
+  ]
+
+  //"components": [
+  //  {
+  //    "type": "LinXi_Service.LxUsersService,LinXi_Service", // 接口的实现类 全名称
+  //    "services": [
+  //      {
+  //        "type": "LinXi_IService.ILxUsersService,LinXi_IService" // 接口的全名称
+  //      }
+  //    ],
+  //    "instanceScope": "single-instance",
+  //    "injectProperties": true
+  //  }
+  //]
+}

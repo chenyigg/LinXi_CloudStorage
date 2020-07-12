@@ -1,0 +1,138 @@
+
+
+【日志时间】：2020-06-30 08:07:28,322  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Now listening on: http://localhost:63833 
+
+
+【日志时间】：2020-06-30 08:07:28,346  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application started. Press Ctrl+C to shut down. 
+
+
+【日志时间】：2020-06-30 08:07:28,347  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Hosting environment: Development 
+
+
+【日志时间】：2020-06-30 08:07:28,348  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Content root path: E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi 
+
+
+【日志时间】：2020-06-30 08:07:29,086  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-30 08:37:49,824  【线程ID】：2    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application is shutting down... 
+
+
+【日志时间】：2020-06-30 19:20:51,110  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Now listening on: http://localhost:63833 
+
+
+【日志时间】：2020-06-30 19:20:51,125  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application started. Press Ctrl+C to shut down. 
+
+
+【日志时间】：2020-06-30 19:20:51,126  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Hosting environment: Development 
+
+
+【日志时间】：2020-06-30 19:20:51,126  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Content root path: E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi 
+
+
+【日志时间】：2020-06-30 19:20:51,723  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-30 19:22:14,539  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Now listening on: http://localhost:63833 
+
+
+【日志时间】：2020-06-30 19:22:14,553  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application started. Press Ctrl+C to shut down. 
+
+
+【日志时间】：2020-06-30 19:22:14,554  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Hosting environment: Development 
+
+
+【日志时间】：2020-06-30 19:22:14,556  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Content root path: E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi 
+
+
+【日志时间】：2020-06-30 19:22:14,858  【线程ID】：9    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-30 19:22:57,670  【线程ID】：2    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application is shutting down... 
+
+
+【日志时间】：2020-06-30 19:25:15,352  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Now listening on: http://localhost:63833 
+
+
+【日志时间】：2020-06-30 19:25:15,366  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application started. Press Ctrl+C to shut down. 
+
+
+【日志时间】：2020-06-30 19:25:15,368  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Hosting environment: Development 
+
+
+【日志时间】：2020-06-30 19:25:15,387  【线程ID】：1    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Content root path: E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi 
+
+
+【日志时间】：2020-06-30 19:25:28,167  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-06-30 19:25:59,949  【线程ID】：2    
+【日志级别】：INFO   
+【日志对象】：Microsoft.Hosting.Lifetime  
+【日志内容】：Application is shutting down... 

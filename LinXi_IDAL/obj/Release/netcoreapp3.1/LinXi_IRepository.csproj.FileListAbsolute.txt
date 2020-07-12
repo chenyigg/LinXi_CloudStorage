@@ -1,0 +1,13 @@
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_IRepository.deps.json
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_IRepository.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_IRepository.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_Common.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_Model.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_Common.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\bin\Release\netcoreapp3.1\LinXi_Model.pdb
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\obj\Release\netcoreapp3.1\LinXi_IRepository.csprojAssemblyReference.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\obj\Release\netcoreapp3.1\LinXi_IRepository.AssemblyInfoInputs.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\obj\Release\netcoreapp3.1\LinXi_IRepository.AssemblyInfo.cs
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\obj\Release\netcoreapp3.1\LinXi_IRepository.csproj.CopyComplete
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\obj\Release\netcoreapp3.1\LinXi_IRepository.dll
+E:\G3项目\LinXi_CloudStorage\LinXi_IDAL\obj\Release\netcoreapp3.1\LinXi_IRepository.pdb

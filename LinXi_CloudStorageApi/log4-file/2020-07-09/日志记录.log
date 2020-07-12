@@ -1,0 +1,393 @@
+
+
+【日志时间】：2020-07-09 14:47:27,056  【线程ID】：4    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-09 14:48:14,500  【线程ID】：15    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 14:48:14,508  【线程ID】：15    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 14:48:14,647  【线程ID】：15    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 14:48:14,649  【线程ID】：15    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 14:48:16,073  【线程ID】：10    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1420.5346ms - OK 
+
+
+【日志时间】：2020-07-09 14:48:16,075  【线程ID】：10    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1430.3596ms - OK 
+
+
+【日志时间】：2020-07-09 14:52:12,331  【线程ID】：42    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 14:52:12,337  【线程ID】：42    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 14:52:12,340  【线程ID】：42    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 14:52:12,341  【线程ID】：42    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 14:52:12,395  【线程ID】：47    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 53.8079ms - OK 
+
+
+【日志时间】：2020-07-09 14:52:12,397  【线程ID】：47    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 57.1936ms - OK 
+
+
+【日志时间】：2020-07-09 15:20:43,267  【线程ID】：11    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-09 16:04:50,927  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-09 16:05:27,014  【线程ID】：9    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 16:05:27,023  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 16:05:27,152  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:05:27,155  【线程ID】：9    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:05:28,473  【线程ID】：6    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 1314.786ms - OK 
+
+
+【日志时间】：2020-07-09 16:05:28,476  【线程ID】：6    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 1325.6548ms - OK 
+
+
+【日志时间】：2020-07-09 16:35:58,072  【线程ID】：105    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：AuthenticationScheme: Bearer was challenged. 
+
+
+【日志时间】：2020-07-09 16:36:15,575  【线程ID】：108    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 16:36:15,583  【线程ID】：108    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 16:36:20,871  【线程ID】：102    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 16:36:20,882  【线程ID】：102    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 16:36:20,887  【线程ID】：102    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:36:20,890  【线程ID】：102    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:36:20,996  【线程ID】：106    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 106.2844ms - BadRequest 
+
+
+【日志时间】：2020-07-09 16:36:21,000  【线程ID】：106    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 112.7067ms - BadRequest 
+
+
+【日志时间】：2020-07-09 16:36:24,222  【线程ID】：107    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 16:36:24,231  【线程ID】：107    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 16:36:24,241  【线程ID】：107    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:36:24,244  【线程ID】：107    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:36:24,295  【线程ID】：106    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 50.5581ms - OK 
+
+
+【日志时间】：2020-07-09 16:36:24,297  【线程ID】：106    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 56.5449ms - OK 
+
+
+【日志时间】：2020-07-09 16:44:19,357  【线程ID】：180    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 16:44:19,368  【线程ID】：180    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 16:44:19,373  【线程ID】：180    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:44:19,375  【线程ID】：180    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:44:19,423  【线程ID】：178    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 47.0955ms - OK 
+
+
+【日志时间】：2020-07-09 16:44:19,426  【线程ID】：178    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 52.8437ms - OK 
+
+
+【日志时间】：2020-07-09 16:45:01,007  【线程ID】：172    
+【日志级别】：ERROR  
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：You must either set Authority or IntrospectionEndpoint 
+System.InvalidOperationException: You must either set Authority or IntrospectionEndpoint
+   at IdentityModel.AspNetCore.OAuth2Introspection.OAuth2IntrospectionOptions.Validate()
+   at IdentityModel.AspNetCore.OAuth2Introspection.PostConfigureOAuth2IntrospectionOptions.PostConfigure(String name, OAuth2IntrospectionOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+
+
+【日志时间】：2020-07-09 16:45:01,012  【线程ID】：172    
+【日志级别】：INFO   
+【日志对象】：IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler  
+【日志内容】：Bearer was not authenticated. Failure message: You must either set Authority or IntrospectionEndpoint 
+
+
+【日志时间】：2020-07-09 16:45:01,016  【线程ID】：172    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：Start processing HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:45:01,017  【线程ID】：172    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Sending HTTP request POST http://localhost:63834/connect/token 
+
+
+【日志时间】：2020-07-09 16:45:01,035  【线程ID】：175    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.ClientHandler  
+【日志内容】：Received HTTP response after 17.1344ms - OK 
+
+
+【日志时间】：2020-07-09 16:45:01,037  【线程ID】：175    
+【日志级别】：INFO   
+【日志对象】：System.Net.Http.HttpClient.Default.LogicalHandler  
+【日志内容】：End processing HTTP request after 21.1704ms - OK 

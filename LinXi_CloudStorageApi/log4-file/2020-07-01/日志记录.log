@@ -1,0 +1,52 @@
+
+
+【日志时间】：2020-07-01 20:02:06,625  【线程ID】：7    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-01 20:02:10,137  【线程ID】：15    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Session.SessionMiddleware  
+【日志内容】：Error unprotecting the session cookie. 
+System.Security.Cryptography.CryptographicException: The key {17632c39-15c3-416c-8812-e530cdbc847e} was not found in the key ring.
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+
+
+【日志时间】：2020-07-01 20:04:19,122  【线程ID】：19    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Session.SessionMiddleware  
+【日志内容】：Error unprotecting the session cookie. 
+System.Security.Cryptography.CryptographicException: The key {17632c39-15c3-416c-8812-e530cdbc847e} was not found in the key ring.
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+
+
+【日志时间】：2020-07-01 20:17:50,991  【线程ID】：1    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.Server.Kestrel  
+【日志内容】：Unable to bind to http://localhost:63833 on the IPv4 loopback interface: '以一种访问权限不允许的方式做了一个访问套接字的尝试。'. 
+
+
+【日志时间】：2020-07-01 20:18:06,524  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-01 21:25:38,431  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
+
+
+【日志时间】：2020-07-01 21:29:28,602  【线程ID】：8    
+【日志级别】：WARN   
+【日志对象】：Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware  
+【日志内容】：Failed to determine the https port for redirect. 
