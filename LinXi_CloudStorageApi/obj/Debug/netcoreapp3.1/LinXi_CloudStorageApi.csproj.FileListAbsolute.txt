@@ -152,7 +152,6 @@ E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\tr\
 E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\Log4net.config
-E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\Autofac.json
 E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 E:\G3项目\LinXi_CloudStorage\LinXi_CloudStorageApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll

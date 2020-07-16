@@ -14,9 +14,7 @@ namespace LinXi_CloudStorageApi.Extensions
             {
                 o.AddPolicy("AllowCors", policy =>
                 {
-                    policy.WithOrigins("http://localhost:3001", "http://localhost:3001",
-                        "http://test.chenyigg.com:3000", "http://www.chenyigg.com:3000",
-                      "http://localhost:63833").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                    policy.WithOrigins("http://localhost:56569", "http://localhost:63833").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
                     policy.WithExposedHeaders("Content-Disposition");
                 });
             });

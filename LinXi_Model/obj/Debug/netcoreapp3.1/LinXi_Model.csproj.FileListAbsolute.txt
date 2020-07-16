@@ -20,3 +20,4 @@ E:\LinXi_CloudStorage\LinXi_Model\obj\Debug\netcoreapp3.1\LinXi_Model.dll
 E:\LinXi_CloudStorage\LinXi_Model\obj\Debug\netcoreapp3.1\LinXi_Model.pdb
 E:\LinXi_CloudStorage\LinXi_Model\obj\Debug\netcoreapp3.1\LinXi_Model.genruntimeconfig.cache
 E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Debug\netcoreapp3.1\LinXi_Model.genruntimeconfig.cache
+E:\G3项目\LinXi_CloudStorage\LinXi_Model\obj\Debug\netcoreapp3.1\LinXi_Model.csprojAssemblyReference.cache
